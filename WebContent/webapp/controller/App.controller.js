@@ -23,7 +23,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Gamers").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postGamerData.php",
+        url : "../../nlpt_php/postGamerData.php",
         data : data,
         success : function(data, response) {
           MessageBox.success("Gamers updated");
@@ -72,7 +72,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Shooter").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           MessageBox.success("Shooter table updated");
@@ -101,7 +101,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Sport").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           MessageBox.success("Sport table updated");
@@ -130,7 +130,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Strategy").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           MessageBox.success("Strategy table updated");
@@ -159,7 +159,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Racing1").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           //MessageBox.success("Racing tables updated");
@@ -174,7 +174,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Racing2").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           //MessageBox.success("Racing tables updated");
@@ -189,7 +189,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Racing3").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           //MessageBox.success("Racing tables updated");
@@ -204,7 +204,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Racing4").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           MessageBox.success("Racing tables updated");
@@ -233,7 +233,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Survival1").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
 //          MessageBox.success("Survival tables updated");
@@ -248,7 +248,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Survival2").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           //          MessageBox.success("Survival tables updated");
@@ -263,7 +263,7 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
       var data = this.getView().getModel("Survival3").getJSON();
       $.ajax({
         type : "POST",
-        url : "../../../../php/postTournamentData.php",
+        url : "../../nlpt_php/postTournamentData.php",
         data : data,
         success : function(data, response) {
           MessageBox.success("Survival tables updated");
@@ -278,17 +278,17 @@ sap.ui.define([ "sap/ui/core/mvc/Controller", "sap/m/MessageBox" ], function(Con
     },
 
     _refreshAllModels : function() {
-      appController.getView().getModel("GamerPoints").loadData("../../../../php/GamerPoints.php");
-      appController.getView().getModel("Shooter").loadData("../../../../php/Shooter.php");
-      appController.getView().getModel("Sport").loadData("../../../../php/Sport.php");
-      appController.getView().getModel("Strategy").loadData("../../../../php/Strategy.php");
-      appController.getView().getModel("Racing1").loadData("../../../../php/Racing.php?round=1");
-      appController.getView().getModel("Racing2").loadData("../../../../php/Racing.php?round=2");
-      appController.getView().getModel("Racing3").loadData("../../../../php/Racing.php?round=3");
-      appController.getView().getModel("Racing4").loadData("../../../../php/Racing.php?round=4");
-      appController.getView().getModel("Survival1").loadData("../../../../php/Survival.php?round=1");
-      appController.getView().getModel("Survival2").loadData("../../../../php/Survival.php?round=2");
-      appController.getView().getModel("Survival3").loadData("../../../../php/Survival.php?round=3");
+      appController.getView().getModel("GamerPoints").loadData("../../nlpt_php/GamerPoints.php");
+      appController.getView().getModel("Shooter").loadData("../../nlpt_php/Shooter.php");
+      appController.getView().getModel("Sport").loadData("../../nlpt_php/Sport.php");
+      appController.getView().getModel("Strategy").loadData("../../nlpt_php/Strategy.php");
+      appController.getView().getModel("Racing1").loadData("../../nlpt_php/Racing.php?round=1");
+      appController.getView().getModel("Racing2").loadData("../../nlpt_php/Racing.php?round=2");
+      appController.getView().getModel("Racing3").loadData("../../nlpt_php/Racing.php?round=3");
+      appController.getView().getModel("Racing4").loadData("../../nlpt_php/Racing.php?round=4");
+      appController.getView().getModel("Survival1").loadData("../../nlpt_php/Survival.php?round=1");
+      appController.getView().getModel("Survival2").loadData("../../nlpt_php/Survival.php?round=2");
+      appController.getView().getModel("Survival3").loadData("../../nlpt_php/Survival.php?round=3");
     }
 
   });
